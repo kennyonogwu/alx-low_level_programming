@@ -2,7 +2,7 @@
 /**
  * main is basically where the program starts
  *
- * Return returns oor any other figure if otherwise
+ * Return terminates the execution of a function.
  */
 int main(void)
 {
