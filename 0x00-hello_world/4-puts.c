@@ -1,4 +1,7 @@
 #include <stdio.h>
+/*
+ * main is the entry of the program
+ * */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
