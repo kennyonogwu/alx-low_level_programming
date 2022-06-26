@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main is basically where the program starts
- *
+ * Nothing goes here
  * Return terminates the execution of a function.
  */
 int main(void)
