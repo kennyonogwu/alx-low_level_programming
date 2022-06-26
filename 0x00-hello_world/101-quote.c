@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main:where the program starts
+ * main-where the program starts
  * Nothing for here
- * Return should be one.
+ * Return: should be one.
  */
 int main(void)
 {
