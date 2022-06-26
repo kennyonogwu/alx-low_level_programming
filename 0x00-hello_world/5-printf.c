@@ -1,6 +1,6 @@
 #include<stdio.h>
 /*
- * main - This is the entry point
+ * main-This is the entry point
  *
  * Return is the last bus stop.
 */
