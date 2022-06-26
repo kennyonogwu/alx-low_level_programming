@@ -1,4 +1,7 @@
 #include <stdio.h>
+/* main is basically where the program starts
+ * while
+ * Return returns 0 or any other figure if otherwise*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
