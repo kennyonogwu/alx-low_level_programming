@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main is basically where the program starts
- * Nothing goes here
- * Return terminates the execution of a function.
+ *main- Serves as the entry point for the program
+ *
+ *Return: By default returns zero if no erros otherwise returns non-zero value.
  */
 int main(void)
 {
