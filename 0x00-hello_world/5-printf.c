@@ -1,8 +1,8 @@
 #include<stdio.h>
-/*
+/**
  * main-This is the entry point
  *
- * Return is the last bus stop.
+ * Return:is the last bus stop.
 */
 int main(void)
 {
