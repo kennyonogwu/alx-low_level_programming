@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /** 
- *Main-The main is where the program starts
+ *main -The main is where the program starts
  * 
  *Return:is where the declared variable ends
  */
