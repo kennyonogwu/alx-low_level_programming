@@ -4,10 +4,10 @@
 
 /**
  *
- * main - Print all single digit numbers
+ * main -Print all single digit numbers
  *
  * Return: Always 0 (Success)
- * */
+ */
 
 int main(void)
 
