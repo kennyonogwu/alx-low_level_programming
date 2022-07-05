@@ -1,27 +1,26 @@
 #include <stdio.h>
+
 /**
- *main-prints first 50 fibbonacci numbers.
+ * main - sum of the even values of a Fibonacci
+ * Created by : Sanctus-Peter
+ * cc: 5th July, 2022
  *
- *Return:void.
+ * Return: 0
  */
 int main(void)
 {
-	long int i, first = 1, second = 2, next = 0, sum = 2;
+	int i = 1, j = 2, total = 0;
+	int k;
 
-	for (i = 0; i < 40; i++)
-		{
-			if (next <= 4000000)
-				{
-					next = second + first;
-					first = second;
-					second = next;
-			if (next % 2 == 0)
-				{
-					sum = sum + next;
-				}
-																								}
-		}
-		printf("%ld", sum);
-		printf("\n");
-return (0);
+	while (j < 4000000)
+	{
+		if (j % 2 == 0)
+			total += j;
+
+		k = j;
+		j += i;
+		i = k;
+	}
+	printf("%d\n", total);
+	return (0);
 }
