@@ -1,17 +1,19 @@
 #include "main.h"
+
 /**
- * main -the start of the program
+ * print_alphabet - prints alphabet in lower case
  *
- * Return: Always zero 0
+ * created : Sanctus_Peter
+ * cc: 5th july, 2022
+ *
+ * Return: void
  */
+
 void print_alphabet(void)
 {
-	int i;
+	int ii;
 
-	for (i=97; i<123; i++)
-	{
-		_putchar(i);
-	}
-		_putchar('\n');
-
+	for (ii = 'a'; ii <= 'z'; ii++)
+		_putchar(ii);
+	_putchar('\n');
 }
