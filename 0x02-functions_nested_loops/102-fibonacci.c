@@ -1,14 +1,9 @@
 #include <stdio.h>
-
-
-
 /**
+ * main-prints first 50 fibbonacci numbers.
  *
- *  *main-prints first 50 fibbonacci numbers.
- *
- *   *Return:void.
- *
- *    */
+ * Return:void.
+ */
 
 
 
