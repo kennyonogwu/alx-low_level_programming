@@ -1,132 +1,65 @@
 #include "main.h"
 
-#include <stdio.h>
+/**
+ * print - print variable recursively using _putchar
+ * @n: variable to print
+ */
+void print(int n);
 
 /**
- * print_to_98 - print all natural numbers from input to 98
+ * print_to_98 - print all natural numbers from var to 98
+ * @var: the starting limit
  *
- * @n: starting point
- *
- * Return: void returns nothing.
+ * Created by: Sanctus-Peter
+ * cc: 5th july, 2022
  */
-
-
-void case_1(int);
-void case_2(int);
-void case_3(int);
-
-void print_to_98(int n)
+void print_to_98(int var)
 {
-int k = n;
-		case_1(k);
-		case_2(k);
-		case_3(k);
-}
-/**
- *case_1- prints up to 98 when n is less than 98.
- *@n:argument passed-printing starts from n.
- *Return:void.
- *
- */
-void case_1(int n)
-{
-	int i;
-	
-	if (n < 98)
+	int stopLimit = 98;
+
+	if (var > stopLimit)
 	{
-		for (i = n; i <= 98; i++)
+		int ii;
+
+		for (ii = var; ii >= stopLimit; ii--)
+		{
+			print(ii);
+			if (ii != stopLimit)
 			{
-				printf("%d", i);
-				if (i == 98)
-				{
-					break;
-				}
-				
-					else
-						{
-							printf(",");
-							printf(" ");
-						}
+				_putchar(',');
+				_putchar(' ');
 			}
-		printf("\n");
+		}
 	}
-}
-/**
- *
- *  *case_2- prints up to 98 when n is greater than 98.
- *
- *   *@n:Argument passed, printing starts here.
- *
- *    *Return-void.
- *
- *     */
+	else
+	{
+		int jj;
 
-void case_2(int n)
-
-{
-
-		int i;
-
-
-
-			if (n > 98)
-
-					{
-
-								for (i = n; i >= 98; i--)
-
-											{
-
-															printf("%d", i);
-
-																		if (i == 98)
-
-																						{
-
-																											break;
-
-																														}
-
-																					else
-
-																									{
-
-																														printf(",");
-
-																																		printf(" ");
-
-																																					}
-
-																							}
-
-										printf("\n");
-
-											}
-
+		for (jj = var; jj <= stopLimit; jj++)
+		{
+			print(jj);
+			if (jj != stopLimit)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
+	_putchar('\n');
 }
 
 /**
- *
- *  *case_3-prints  98.
- *
- *   *@n:argument passed must be 98.
- *
- *    *Return 0.
- *
- *     */
-
-void case_3(int n)
-
+ * print - to print
+ * @n: var
+ */
+void print(int n)
 {
-
-		if (n == 98)
-
-				{
-
-							printf("%d", n);
-
-									printf("\n");
-
-										}
-
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+	if (n / 10)
+		print(n / 10);
+	_putchar(n % 10 + '0');
 }
