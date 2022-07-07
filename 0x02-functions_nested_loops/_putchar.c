@@ -5,7 +5,7 @@ int main()
 	getchar();
 	return 0;
 }
-void _putchar()
+int _putchar()
 {
 	printf("_putchar called");
 }
