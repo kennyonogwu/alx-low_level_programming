@@ -1,11 +1,11 @@
 int main()
 
 {
-	foo();
+	_putchar();
 	getchar();
 	return 0;
 }
-void foo()
+void _putchar()
 {
-	printf("foo called");
+	printf("_putchar called");
 }
