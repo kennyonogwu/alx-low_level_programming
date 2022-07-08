@@ -1,19 +1,20 @@
 #include "main.h"
 
-
-
 /**
+ * print_numbers - prints number from 0-9
  *
- * * print_numbers - function that prints the numbers, from 0 to 9.
- *
- * */
+ * Created by: Sanctus-Peter
+ * cc: 7th july, 2022
+ */
 
 void print_numbers(void)
-
 {
-	char x;
+	int ii = 0;
 
-	for (x = '0'; x <= '9'; x++)
-		_putchar(x);
-		_putchar('\n');
+	do {
+		_putchar(ii + '0');
+		ii++;
+	} while (ii < 10);
+
+	_putchar('\n');
 }
