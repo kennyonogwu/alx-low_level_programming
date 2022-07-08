@@ -1,12 +1,35 @@
 #include "main.h"
+
 /**
- * main - check the code
+ * print_most_numbers - print numbers from 0-9 excluding 2 and 4
  *
- * Return: Always 0.
- *
+ * Created by: sanctus-Peter
+ * cc: 7th july, 2022
  */
-int main(void)
+
+void print_most_numbers(void)
 {
-	    print_most_numbers();
-	        return (0);
+	int var = 0;
+
+	do {
+		if (var == 4 || var == 2)
+		{
+			var++;
+			continue;
+		}
+		else
+			_putchar(var + '0');
+		var++;
+	} while (var < 10);
+
+	_putchar('\n');
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
