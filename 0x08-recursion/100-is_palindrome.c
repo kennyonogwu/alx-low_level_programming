@@ -7,13 +7,13 @@
  */
 
 int _strlen_recursion(char *n)
-{
-	if (!*n)
 	{
-		return (0);
-	}
-	return (1 + _strlen_recursion(++n));
-}
+		if (!*n)
+		{
+			return (0);
+		}
+		return (1 + _strlen_recursion(++n));
+		}
 
 /**
  * ispal- helper function for is_palindrome
@@ -23,15 +23,15 @@ int _strlen_recursion(char *n)
  * Return: 1 if true, 0 if false
  */
 int ispal(char str[], int s, int e)
-{
-	if (s == e)
+	{
+		if (s == e)
+			return (1);
+		if (str[s] != str[e])
+			return (0);
+		if (s < e + 1)
+			return (ispal(str, s + 1, e - 1));
 		return (1);
-	if (str[s] != str[e])
-		return (0);
-	if (s < e + 1)
-		return (ispal(str, s + 1, e - 1));
-	return (1);
-}
+	}
 
 /**
  * is_palindrome - returns 1 if a string is a palindrome and 0 if not
@@ -41,6 +41,5 @@ int ispal(char str[], int s, int e)
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s) - 1;
-
 	return (ispal(s, 0, len));
 }
