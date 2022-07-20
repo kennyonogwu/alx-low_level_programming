@@ -13,7 +13,7 @@ int _strlen_recursion(char *n)
 			return (0);
 		}
 		return (1 + _strlen_recursion(++n));
-		}
+	}
 
 /**
  * ispal- helper function for is_palindrome
