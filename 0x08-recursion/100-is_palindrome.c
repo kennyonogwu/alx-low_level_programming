@@ -9,7 +9,7 @@ int check_palindrome(char *s, int start, int end);
  *
  * Return: returns 1 if a string is a palindrome and 0 if not.
  */
-int is_palindrome(char *s)
+int is_palindrome(char *s);
 {
 	int len = _strlen(s);
 
